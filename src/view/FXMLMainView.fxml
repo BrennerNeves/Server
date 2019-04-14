@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="502.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageFXMLMainController">
+   <children>
+      <Button id="btnStartServer" fx:id="btnStartServer" layoutX="251.0" layoutY="39.0" mnemonicParsing="false" onAction="#onBtnStartServerClick" text="Iniciar Servidor" />
+      <Label id="lblPort" layoutX="30.0" layoutY="22.0" prefHeight="17.0" prefWidth="103.0" text="Porta" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="22.0" />
+      <TextField id="tfPortServer" fx:id="textFieldPortServer" layoutX="30.0" layoutY="39.0" prefHeight="25.0" prefWidth="171.0" />
+      <Button id="btnStopServer" fx:id="btnStopServer" disable="true" layoutX="380.0" layoutY="39.0" mnemonicParsing="false" onAction="#onBtnStopServerClick" text="Parar Servidor" />
+      <Label layoutX="19.0" layoutY="131.0" prefHeight="17.0" prefWidth="129.0" text="Usuarios Conectados" />
+      <Label layoutX="251.0" layoutY="131.0" prefHeight="17.0" prefWidth="103.0" text="Mensagens" />
+      <Label fx:id="lblStatus" layoutX="30.0" layoutY="72.0" prefHeight="17.0" prefWidth="246.0" />
+      <ListView fx:id="lvConnectedUsers" layoutX="19.0" layoutY="156.0" prefHeight="200.0" prefWidth="220.0" />
+      <ListView fx:id="lvMessageUsers" layoutX="251.0" layoutY="156.0" prefHeight="200.0" prefWidth="220.0" />
+   </children>
+</AnchorPane>
